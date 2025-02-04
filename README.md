@@ -1,3 +1,9 @@
 # Rails Bulletin Board
 
-Basic rials tutorial.
+Implemented basic CRUD system.
+
+- Display post list
+- Create new post
+- Edit post
+- Update post
+- Delete post
