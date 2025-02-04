@@ -89,12 +89,28 @@ ul li p {
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
-  margin-left: 10px;
   border: 1px solid;
   cursor: pointer;
 }
 
 .edit-delete-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   margin-top: 10px;
+}
+
+.edit-button {
+  display: inline-block;
+  background-color: #81c7a5;
+  font-size: 17px;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+
 }

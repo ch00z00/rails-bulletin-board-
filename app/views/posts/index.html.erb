@@ -1,7 +1,7 @@
-<h1>Hello Ruby</h1>
+<h1>Rails Bulletin Board</h1>
 
 <div class="button-container">
-  <%= link_to "Create post →", "posts/new" %>
+  <%= link_to "NEW", new_post_path, class: "link-button" %>
 
   <ul>
     <% @posts.each do |post| %>
@@ -11,6 +11,10 @@
         <span>
           <small><%= post.created_at %></small>
         </span>
+        <div class="edit-delete-wrapper">
+          <%= link_to "EDIT", edit_post_path(post), class: "edit-button " %>
+          <%= button_to "DELETE", post_path(post), method: :delete, class: "link-delete-button" %>
+        </div>
       </li>
     <% end %>
   </ul>
